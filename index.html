@@ -34,6 +34,18 @@
   <p>Static CTRNN (leg 2 dead) and Hebbian CTRNN (leg 4 dead).</p>
   <img src="randleg_worst_leg.gif" alt="Static CTRNN with leg 2 dead and Hebbian CTRNN with leg 4 dead">
 
+  <h2>Neuromodulated walker vs the other models</h2>
+  <p>Trained on a random dead leg: static CTRNN, Hebbian CTRNN and neuromodulated Hebbian CTRNN with leg 2 dead.</p>
+  <img src="neuromod_randleg_leg2.gif" alt="Static, Hebbian and neuromodulated CTRNN walking with leg 2 dead">
+
+  <h2>Neuromodulated walker: learning on vs frozen</h2>
+  <p>The same network on the same start. Bottom: its weights stop changing when the leg dies.</p>
+  <img src="neuromod_live_vs_frozen.gif" alt="Neuromodulated walker with learning on and with weights frozen at the damage">
+
+  <h2>Hidden damage: weakened leg</h2>
+  <p>Leg 3 at half strength, which the foot sensor cannot detect. Static CTRNN (top) vs neuromodulated (bottom), same start.</p>
+  <img src="neuromod_hidden_weak_leg.gif" alt="Static and neuromodulated CTRNN with a weakened leg 3">
+
   <h2>CTRNN vs Hebbian CTRNN, same start</h2>
   <p>Seed 0 with leg 5 dead.</p>
   <img src="hebb_edge_s0_leg5.gif" alt="CTRNN and Hebbian CTRNN, seed 0, leg 5 dead">
