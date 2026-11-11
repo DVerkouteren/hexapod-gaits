@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hexapod Gait Videos</title>
+<style>
+  body { margin: 0; padding: 24px 16px 48px; background: #ffffff; color: #1d1f23; font: 17px/1.5 Arial, Helvetica, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 4px; }
+  p { margin: 0 0 12px; color: #4a5059; }
+  img { width: 100%; height: auto; border: 1px solid #dde1e6; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hexapod Gait Videos</h1>
+  <p>Dane C. Verkouteren, Rose-Hulman Institute of Technology. One leg is damaged at 75 s (shown in red). Played at 10× speed.</p>
+
+  <h2>Trained on one dead leg: easiest leg</h2>
+  <p>Feedforward, CTRNN and Hebbian CTRNN with leg 5 dead.</p>
+  <img src="compare_best_leg.gif" alt="Feedforward, CTRNN and Hebbian CTRNN walking with leg 5 dead">
+
+  <h2>Trained on one dead leg: hardest leg</h2>
+  <p>The same three controllers on the leg each handles worst.</p>
+  <img src="compare_worst_leg.gif" alt="Feedforward, CTRNN and Hebbian CTRNN on their hardest dead leg">
+
+  <h2>Trained on a random dead leg: easiest leg</h2>
+  <p>Static CTRNN and Hebbian CTRNN with leg 1 dead.</p>
+  <img src="randleg_best_leg.gif" alt="Static and Hebbian CTRNN walking with leg 1 dead">
+
+  <h2>Trained on a random dead leg: hardest leg</h2>
+  <p>Static CTRNN (leg 2 dead) and Hebbian CTRNN (leg 4 dead).</p>
+  <img src="randleg_worst_leg.gif" alt="Static CTRNN with leg 2 dead and Hebbian CTRNN with leg 4 dead">
+
+  <h2>CTRNN vs Hebbian CTRNN, same start</h2>
+  <p>Seed 0 with leg 5 dead.</p>
+  <img src="hebb_edge_s0_leg5.gif" alt="CTRNN and Hebbian CTRNN, seed 0, leg 5 dead">
+</main>
+</body>
+</html>
